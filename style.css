@@ -1,0 +1,156 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #fdfcf8;
+  color: #333;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.logo span {
+  font-size: 13px;
+  color: gray;
+  margin-left: 10px;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #0077b6;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 60px;
+  gap: 60px;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.info h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.info h3 {
+  margin-top: 10px;
+  color: #555;
+  font-weight: 500;
+}
+
+.info p {
+  margin-top: 15px;
+  line-height: 1.7;
+  color: #444;
+  max-width: 500px;
+}
+
+
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-weight: 600;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.resume {
+  background-color: #d9f99d;
+}
+.research {
+  background-color: #facc15;
+}
+.outreach {
+  background-color: #bae6fd;
+}
+.personal {
+  background-color: #e5e7eb;
+}
+
+.circle:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+  border-top: 1px solid #ddd;
+  background-color: #fff;
+  color: #444;
+  font-size: 14px;
+}
+
+footer a {
+  color: #0077b6;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .info p {
+    margin: 0 auto;
+  }
+
+  .buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
